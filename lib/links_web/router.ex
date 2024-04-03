@@ -18,6 +18,7 @@ defmodule LinksWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    live "/follow", FollowLive
   end
 
   # Other scopes may use custom stacks.
